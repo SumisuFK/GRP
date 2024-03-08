@@ -1,0 +1,84 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.logo__page {
+    position: fixed;
+    z-index: 10;
+    top: 67px;
+    left: 65px;
+}
+
+.logo {
+    display: flex;
+    width: 200px;
+}
+
+.padding-0 {
+    padding: 0 !important;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.body {
+    overflow-x: hidden;
+}
+
+.background__header {
+    background-image: url(/static/rp-bangclaw.jpeg);
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 110vw;
+    height: 110vh;
+    top: -5vh;
+    left: -5vw;
+    position: absolute;
+    backface-visibility: hidden;
+    z-index: 0;;
+}
+
+.background__header::before, #header {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    content: "";
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: rgb(41 41 41 / 23%);
+}
+
+.header {
+    z-index: 5;
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.container__header {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    display: block;
+    text-align: center;
+    margin-top: -157px;
+}
+
+.title {
+    font-size: 92px;
+    color: #fff;
+}

@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeafRP</title>
+    <link rel="stylesheet" type="text/css" href="{% static  'Darkrp/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Darkrp/css/reset.css' %}">
+</head>
+<body>
+    <div class="logo__page">
+        <a href="">
+            <img src="{% static 'leaf.png' %}" alt="logo" class="logo">
+        </a>
+    </div>
+
+    {% block content %} {% endblock %}  
+
+    <script src="{% static 'Darkrp/js/main.js' %}" type="text/javascript"></script>
+</body>
+</html>
