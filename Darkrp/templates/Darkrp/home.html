@@ -1,21 +1,43 @@
 {% extends 'Darkrp/base.html' %}
 {% block content %}
+{% load static %}
 
-<div class="content">
-    <div class="padding-0 row">
-        <div class="container">
-            <div class="wrapper">
-                <div class="header" id="header">
-                    <div class="background__header"></div>
-                    <div class="content__header">
-                        <div class="container__header">
-                            <h1 class="title">LeafRP</h1>
+<main class="main">
+    <section class="first" style="height: 100%;">
+        <div class="padding-0 row">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="header" id="header">
+                        <div class="background__header"></div>
+                        <div class="content__header">
+                            <div class="container__header">
+                                <h1 class="title">LeafRP</h1>
+                                <h4 class="subtitle">Стань кем угодно</h4>
+                                <h3 class="subtitle2">46.232.15.312:27030</h3>
+                                <div class="button__container">
+                                    <a href="#" class="join__button">
+                                        <span class="button__line button__line--top"></span>
+                                        <span class="button__line button__line--right"></span>
+                                        <span class="button__line button__line--bottom"></span>
+                                        <span class="button__line button__line--left"></span>
+                                        <span class="text1">подключиться</span>
+                                        <span class="text2">к серверу</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
+    <section class="second">
+        <div class="row">
+            <div class="image__container">
+                <img src="{% static '' %}" alt="">
+            </div>
+        </div>
+    </section>
+</main>
 {% endblock %}
