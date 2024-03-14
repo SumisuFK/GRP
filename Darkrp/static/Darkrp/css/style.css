@@ -214,3 +214,30 @@ body {
     padding-top: 110px;
     padding-bottom: 110px;
 }
+
+.item__album {
+    margin: 0;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    background: transparent;
+}
+
+.content {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 45px;
+    padding-right: 45px;
+    width: 100%;
+    overflow: inherit;
+    max-width: 1170px;
+}
+
+.image__container {
+    margin: 0 auto;
+    max-width: 500px;
+    max-height: 500px;
+    position: relative;
+}

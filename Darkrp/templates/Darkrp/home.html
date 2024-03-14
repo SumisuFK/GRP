@@ -3,7 +3,7 @@
 {% load static %}
 
 <main class="main">
-    <section class="first" style="height: 100%;">
+    <section class="first" style="height: 100vh;">
         <div class="padding-0 row">
             <div class="container">
                 <div class="wrapper">
@@ -14,7 +14,7 @@
                                 <h1 class="title">LeafRP</h1>
                                 <h4 class="subtitle">Стань кем угодно</h4>
                                 <h3 class="subtitle2">46.232.15.312:27030</h3>
-                                <div class="button__container">
+                                <div class="button__container">                          {% comment %}   Сделать background_header width больще когда маленькое окно браузера и header также чтобы справа не появлялось белой полосы {% endcomment %}
                                     <a href="#" class="join__button">
                                         <span class="button__line button__line--top"></span>
                                         <span class="button__line button__line--right"></span>
@@ -33,11 +33,7 @@
     </section>
 
     <section class="second">
-        <div class="row">
-            <div class="image__container">
-                <img src="{% static '' %}" alt="">
-            </div>
-        </div>
+        <div></div>
     </section>
 </main>
 {% endblock %}
